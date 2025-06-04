@@ -1,0 +1,95 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #0f0f0f 0%, #111 100%);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .pricing-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .pricing-plan {
+      background: linear-gradient(145deg, #0e0e0e, #1a1a1a);
+      border: 2px solid #00f7ff;
+      border-radius: 20px;
+      width: 300px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 0 15px #00f7ff80;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-plan:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 30px #00f7ff;
+    }
+
+    .plan-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #00f7ff;
+      margin-bottom: 1rem;
+    }
+
+    .plan-price {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #ff00ff, #00f7ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+    }
+
+    .plan-features {
+      list-style: none;
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+      padding: 0;
+    }
+
+    .plan-features li {
+      margin: 0.7rem 0;
+    }
+
+    .plan-button {
+      background: linear-gradient(to right, #00f7ff, #ff00ff);
+      color: #000;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: 700;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00f7ff;
+    }
+
+    .plan-button:hover {
+      background: linear-gradient(to right, #ff00ff, #00f7ff);
+      box-shadow: 0 0 20px #ff00ff, 0 0 20px #00f7ff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 900px) {
+      .pricing-plan {
+        width: 80%;
+      }
+    }
